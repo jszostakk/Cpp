@@ -1,0 +1,5 @@
+C:/Users/Kuba/CLionProjects/JiPP2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Kuba/CLionProjects/JiPP2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Kuba/CLionProjects/JiPP2/cmake-build-debug/Lab2/CMakeFiles/zad1.dir
+C:/Users/Kuba/CLionProjects/JiPP2/cmake-build-debug/Lab2/CMakeFiles/edit_cache.dir
+C:/Users/Kuba/CLionProjects/JiPP2/cmake-build-debug/Lab2/CMakeFiles/rebuild_cache.dir
