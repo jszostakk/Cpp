@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Kuba/CLionProjects/JiPP2/Lab2/zestaw2/src/main.cpp
+iostream
+-
+stdlib.h
+-
+time.h
+-
+algorithm
+-
+

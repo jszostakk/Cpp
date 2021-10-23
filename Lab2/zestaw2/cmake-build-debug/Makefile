@@ -56,10 +56,10 @@ RM = "F:\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Kuba\CLionProjects\JiPP2
+CMAKE_SOURCE_DIR = C:\Users\Kuba\CLionProjects\JiPP2\Lab2\zestaw2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Kuba\CLionProjects\JiPP2\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Kuba\CLionProjects\JiPP2\Lab2\zestaw2\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Kuba\CLionProjects\JiPP2\cmake-build-debug\CMakeFiles C:\Users\Kuba\CLionProjects\JiPP2\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Kuba\CLionProjects\JiPP2\Lab2\zestaw2\cmake-build-debug\CMakeFiles C:\Users\Kuba\CLionProjects\JiPP2\Lab2\zestaw2\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Kuba\CLionProjects\JiPP2\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Kuba\CLionProjects\JiPP2\Lab2\zestaw2\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,17 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named zestaw1
+# Target rules for targets named zestaw2
 
 # Build rule for target.
-zad1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 zad1
-.PHONY : zad1
+zestaw2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 zestaw2
+.PHONY : zestaw2
 
 # fast build rule for target.
-zad1/fast:
-	$(MAKE) $(MAKESILENT) -f Lab2\CMakeFiles\zad1.dir\build.make Lab2/CMakeFiles/zad1.dir/build
-.PHONY : zad1/fast
+zestaw2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zestaw2.dir\build.make CMakeFiles/zestaw2.dir/build
+.PHONY : zestaw2/fast
+
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zestaw2.dir\build.make CMakeFiles/zestaw2.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zestaw2.dir\build.make CMakeFiles/zestaw2.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zestaw2.dir\build.make CMakeFiles/zestaw2.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -136,7 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... zad1
+	@echo ... zestaw2
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 
