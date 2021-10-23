@@ -88,7 +88,7 @@ void zad4(){
 }
 
 int main(){
-    //zestaw1();
+    //zad1();
     //zad2();
     //zad3();
     //zad4();
