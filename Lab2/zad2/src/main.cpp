@@ -23,14 +23,6 @@ void zad1(){
 
 // ===================================================== ZAD2
 
-void stworztablice(int *t, int r){
-    cout<<"Wpisz rozmiar"<<endl;
-    cin>>r;
-    t=new int[r];
-    for(int i = 0;i<r;i++){
-        cin>>t[i];
-    }
-}
 
 void wyswietltablice(int *t, int r){
     for(int i = 0;i<r;i++)
@@ -46,7 +38,12 @@ void spr(int *t, int r){
 
 void zad2(){
     int *t, r;
-    stworztablice(t,r);
+    cout<<"Wpisz rozmiar"<<endl;
+    cin>>r;
+    t=new int[r];
+    for(int i = 0;i<r;i++){
+        cin>>t[i];
+    }
     spr(t,r);
     delete[] t;
 }
@@ -64,21 +61,37 @@ void sort(int *t, int r){
 void zad3()
 {
     int *t, r;
-    stworztablice(t,r);
+    cout<<"Wpisz rozmiar"<<endl;
+    cin>>r;
+    t=new int[r];
+    for(int i = 0;i<r;i++){
+        cin>>t[i];
+    }
+    wyswietltablice(t,r);
     sort(t,r);
     wyswietltablice(t,r);
+
 }
 
 // ===================================================== ZAD4
 
-void zad4(int x, int *w){
-    w = &x;
+void funkcja(int x, int *w){
+    *w = x;
+}
+
+void zad4(){
+    int z = 6, *y, x=9;
+    y = &z;
+    cout<<"przed:\nz="<<z<<"\nx="<<x<<endl;
+    funkcja(x,y);
+    cout<<"po:\nz="<<z<<"\nx="<<x<<endl;
 }
 
 int main(){
     //zad1();
     //zad2();
     //zad3();
+    //zad4();
 
     return 0;
 }
