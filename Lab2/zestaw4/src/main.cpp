@@ -1,9 +1,8 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
-
-int dziel(int a, int b){
+/*int dziel(int a, int b){
     if (a%b!=0)
         throw invalid_argument("Wynik niecalkowity");
 
@@ -31,9 +30,10 @@ int zad1(){
     }
     return a/b;
 }
+*/
 
-int main(){
-    zad1();
+int main()
+{
 
     return 0;
 }

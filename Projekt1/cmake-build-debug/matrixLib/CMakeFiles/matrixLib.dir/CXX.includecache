@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Kuba/CLionProjects/JiPP2/Projekt1/matrixLib/include/lib.h
+
+C:/Users/Kuba/CLionProjects/JiPP2/Projekt1/matrixLib/src/lib.cpp
+iostream
+-
+iomanip
+-
+../include/lib.h
+C:/Users/Kuba/CLionProjects/JiPP2/Projekt1/matrixLib/include/lib.h
+

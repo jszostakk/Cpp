@@ -1,0 +1,3 @@
+C:/Users/Kuba/CLionProjects/JiPP2/Projekt1/matrixApp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Kuba/CLionProjects/JiPP2/Projekt1/matrixApp/cmake-build-debug/CMakeFiles/Projekt1.dir
+C:/Users/Kuba/CLionProjects/JiPP2/Projekt1/matrixApp/cmake-build-debug/CMakeFiles/edit_cache.dir
