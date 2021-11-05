@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Destruktor.h
+
+C:/Users/Kuba/CLionProjects/JiPP2/Lab4/zestaw4/include/Destruktor.h
+
+C:/Users/Kuba/CLionProjects/JiPP2/Lab4/zestaw4/src/Destruktor.cpp
+Destruktor.h
+C:/Users/Kuba/CLionProjects/JiPP2/Lab4/zestaw4/src/Destruktor.h
+iostream
+-
+
+C:/Users/Kuba/CLionProjects/JiPP2/Lab4/zestaw4/src/main.cpp
+../include/Destruktor.h
+C:/Users/Kuba/CLionProjects/JiPP2/Lab4/zestaw4/include/Destruktor.h
+
