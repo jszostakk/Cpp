@@ -1,4 +1,7 @@
-//
-// Created by student on 08.11.21.
-//
+#include <iostream>
+#include "../include/Pojazd.h"
 
+Pojazd::Pojazd()
+{
+
+}
