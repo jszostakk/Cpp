@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Kuba/CLionProjects/JiPP2/JiPP2/Lab7/zestaw1/include/Figura.h
+iostream
+-
+math.h
+C:/Users/Kuba/CLionProjects/JiPP2/JiPP2/Lab7/zestaw1/include/math.h
+
+C:/Users/Kuba/CLionProjects/JiPP2/JiPP2/Lab7/zestaw1/src/Figura.cpp
+../include/Figura.h
+C:/Users/Kuba/CLionProjects/JiPP2/JiPP2/Lab7/zestaw1/include/Figura.h
+
