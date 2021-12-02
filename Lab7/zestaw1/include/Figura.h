@@ -12,15 +12,16 @@ protected:
 
 public:
     Figura();
+    virtual double getArea() = 0;
 };
 
 class Rectangle : public Figura
 {
 public:
     int a, b;
-    Rectangle();
+    Rectangle(int a, int b);
     double perimeter( int a, int b );
-    double area( int a, int b);
+    double getArea();
     void setA(int a);
     void setB(int b);
 };
@@ -29,9 +30,9 @@ class Circle : public Figura
 {
 public:
     int r;
-    Circle();
+    Circle(int r);
     double perimeter(int r);
-    double area(int r);
+    double getArea();
     void setR(int r);
 
 };

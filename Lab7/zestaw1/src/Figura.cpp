@@ -9,12 +9,12 @@ Figura::Figura()
     cin >> color;
 }
 
-Rectangle::Rectangle()
-{
+Rectangle::Rectangle(int a, int b)
+{/*
     cout << "Insert values: \n a = ";
     cin >> a;
     cout << "\n b = ";
-    cin >> b;
+    cin >> b;*/
 }
 
 void Rectangle::setA ( int a )
@@ -32,15 +32,15 @@ double Rectangle::perimeter ( int a, int b )
     return 2*(a + b);
 }
 
-double Rectangle::area ( int a, int b )
+double Rectangle::getArea ()
 {
     return a*b;
 }
 
-Circle::Circle()
+Circle::Circle(int r)
 {
-    cout << "Insert value: \n r = ";
-    cin >> r;
+  /*  cout << "Insert value: \n r = ";
+    cin >> r;*/
 }
 
 void Circle::setR( int r)
@@ -53,7 +53,7 @@ double Circle::perimeter(int r)
     return M_PI*2*r;
 }
 
-double Circle::area(int r)
+double Circle::getArea()
 {
     return M_PI*r*r;
 }

@@ -3,14 +3,10 @@
 
 using namespace std;
 
-int main()
-{
-    Rectangle x;
-    cout << x.area(x.a, x.b) << endl;
+int main() {
+    Figura *circle = new Circle(5);
+    Figura *rectangle = new Rectangle(5, 18);
 
-    Circle y;
-    cout << y.area(y.r) << endl;
-
-    return 0;
+    cout << "Circle area: " << circle->getArea() << endl;
+    cout << "Rectangle area: " << rectangle->getArea() << endl;
 }
-
