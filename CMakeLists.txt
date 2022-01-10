@@ -4,4 +4,5 @@ add_subdirectory(SimpleCalc
         Lab4
         Lab5
         Lab6
-        Projekt1)
+        Projekt1
+        Projekt2)
