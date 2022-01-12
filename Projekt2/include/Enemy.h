@@ -2,12 +2,13 @@
 #define ZESTAW1_ENEMY_H
 
 #include "Entity.h"
+#include "time.h"
 
 using namespace std;
 
-class Enemy:public Entity {
+class Enemy : public Entity {
 public:
-    Enemy();
+    Enemy(int level);
 
     void showStats();
 };

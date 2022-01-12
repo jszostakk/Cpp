@@ -16,7 +16,7 @@ int main(int argc, char *argv[]){
         difficulty = 0.75;
 
     else if(order == "medium")
-        difficulty == 1;
+        difficulty = 1;
 
     else if(order == "hard")
         difficulty = 1.5;
@@ -24,5 +24,4 @@ int main(int argc, char *argv[]){
         help();
 
     Hero player;
-
 }
