@@ -9,6 +9,8 @@ protected:
 public:
     Hero();
 
+    ~Hero();
+
     void setMoney(int money);
 
     int getMoney();

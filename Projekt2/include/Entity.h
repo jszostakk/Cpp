@@ -20,17 +20,11 @@ protected:
     string name;
 
 public:
-    int *pHp = &hp;
-    int *pDamageMin = &damageMin;
-    int *pDamageMax = &damageMax;
-    int *pLevel = &level;
-    string *pName = &name;
-
     Entity();
 
     void setHP(int hp);
 
-    int getHp();
+    int getHP();
 
     void setDamageMin(int dmg);
 

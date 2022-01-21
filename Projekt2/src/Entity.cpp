@@ -2,22 +2,42 @@
 
 Entity::Entity() {}
 
-void setHP(int hp){}
+void Entity::setHP(int hp) {
+    this->hp = hp;
+}
 
-int getHp(){}
+int Entity::getHP() {
+    return hp;
+}
 
-void setDamageMin(int dmg){}
+void Entity::setDamageMin(int dmg) {
+    damageMin = dmg;
+}
 
-int getDamageMin(){}
+int Entity::getDamageMin() {
+    return damageMin;
+}
 
-void setDamageMax(int dmg){}
+void Entity::setDamageMax(int dmg) {
+    damageMax = dmg;
+}
 
-int getDamageMax(){}
+int Entity::getDamageMax() {
+    return damageMax;
+}
 
-void setLevel(int level){}
+void Entity::setLevel(int level) {
+    this->level = level;
+}
 
-int getLevel(){}
+int Entity::getLevel() {
+    return level;
+}
 
-void setName(string name){}
+void Entity::setName(string name) {
+    this->name = name;
+}
 
-string getName(){}
+string Entity::getName() {
+    return name;
+}

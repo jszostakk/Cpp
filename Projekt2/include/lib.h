@@ -5,6 +5,6 @@ using namespace std;
 
 void help();
 
-void showStats(Hero hero);
+bool fight(Hero hero);
 
-void showStats(Enemy enemy);
+bool fight(Hero hero, Enemy *enemy);

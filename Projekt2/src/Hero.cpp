@@ -10,6 +10,10 @@ Hero::Hero() {
     money = 0;
 }
 
+Hero::~Hero() {
+    cout << "\nYou lost :(" << endl;
+}
+
 void Hero::showStats() {
     cout << "=====================================YOUR CHARACTER STATS=====================================" << endl <<
          "                                          Name: " << name << endl <<

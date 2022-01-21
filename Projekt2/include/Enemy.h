@@ -8,7 +8,8 @@ using namespace std;
 
 class Enemy : public Entity {
 public:
-    Enemy(int level);
+    Enemy(int level, double difficulty);
+    ~Enemy();
 
     void showStats();
 };
