@@ -6,4 +6,5 @@ add_executable(Projekt2 main.cpp
         Entity.cpp
         Enemy.cpp
         Hero.cpp
-        lib.cpp)
+        lib.cpp
+        Mission.cpp)

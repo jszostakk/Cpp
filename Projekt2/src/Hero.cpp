@@ -1,5 +1,7 @@
+#include "../include/lib.h"
 #include "../include/Hero.h"
 
+using namespace std;
 Hero::Hero() {
     cout << "Name your character: ";
     cin >> name;
@@ -11,7 +13,6 @@ Hero::Hero() {
 }
 
 Hero::~Hero() {
-    cout << "\nYou lost :(" << endl;
 }
 
 void Hero::showStats() {
@@ -32,11 +33,13 @@ void Hero::levelUp() {
     while (loop) {
         cout << "Choose which stat you want to upgrade: \n-HP \n-Damage \n Your choice: ";
         cin >> choice;
+        toLowerCase(choice);
+        cout<<choice;
 
-        if (choice == "hp" || choice == "HP") {
+        if (choice == "hp") {
             hp += 5;
             loop = false;
-        } else if (choice == "damage" || choice == "Damage") {
+        } else if (choice == "damage") {
             damageMin += 2;
             damageMax += 2;
             loop = false;
@@ -45,4 +48,12 @@ void Hero::levelUp() {
         }
     }
     cout << "==============================================================================================" << endl;
+}
+
+int Hero::getMoney() {
+    return money;
+}
+
+void Hero::setMoney(int money) {
+    this->money = money;
 }

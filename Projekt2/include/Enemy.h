@@ -15,4 +15,4 @@ public:
 };
 
 
-#endif //ZESTAW1_ENEMY_H
+#endif //PROJEKT2_ENEMY_H

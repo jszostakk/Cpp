@@ -21,4 +21,4 @@ public:
 };
 
 
-#endif //ZESTAW1_HERO_H
+#endif //PROJEKT2_HERO_H

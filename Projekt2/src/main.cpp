@@ -4,8 +4,6 @@
 #include "../include/Hero.h"
 #include "../include/Enemy.h"
 
-using namespace std;
-
 int main(int argc, char *argv[]){
     string order = argv[1];
     double difficulty;
@@ -27,8 +25,15 @@ int main(int argc, char *argv[]){
         help();
         return 0;
     }
-
-    Hero player;
-    Enemy *enemy = new Enemy(10, difficulty);
-    enemy->showStats();
+string h;
+    cin>>h;
+    toLowerCase(h);
+    cout<<h;
+//    Hero player;
+//    player.levelUp();
+//    Enemy *enemy = new Enemy(2, difficulty);
+//    enemy->showStats();
+//    tavern();
+    vector<string> vector;
+    getFile("C:\\Users\\Kuba\\CLionProjects\\JiPP2\\Projekt2\\missions", vector);
 }
