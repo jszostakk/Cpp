@@ -6,7 +6,6 @@ using namespace std;
 Enemy::Enemy(int level, double difficulty) {
     srand(time(NULL));
     ifstream input("C:\\Users\\Kuba\\CLionProjects\\JiPP2\\Projekt2\\names");
-    cout << "A new enemy has attacked!" << endl;
     this->level = level;
     hp = 10;
     damageMin = 1;
@@ -21,12 +20,13 @@ Enemy::Enemy(int level, double difficulty) {
         }
     }
 
-    for (int i = 0; i< (rand() % 8)+1; i++) {
+    for (int i = 0; i < (rand() % 8) + 1; i++) {
         getline(input, name);
     }
-    hp*=difficulty;
-    damageMin*=difficulty;
-    damageMax*=difficulty;
+    hp *= difficulty;
+    damageMin *= difficulty;
+    damageMax *= difficulty;
+    cout << "A new enemy - " << name << " - has attacked!" << endl;
 }
 
 Enemy::~Enemy() {

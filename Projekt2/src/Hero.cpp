@@ -33,8 +33,9 @@ void Hero::levelUp() {
     while (loop) {
         cout << "Choose which stat you want to upgrade: \n-HP \n-Damage \n Your choice: ";
         cin >> choice;
-        toLowerCase(choice);
-        cout<<choice;
+        for_each(choice.begin(), choice.end(), [](char &c) {
+            c = ::tolower(c);
+        });
 
         if (choice == "hp") {
             hp += 5;

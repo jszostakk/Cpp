@@ -25,15 +25,12 @@ int main(int argc, char *argv[]){
         help();
         return 0;
     }
-string h;
-    cin>>h;
-    toLowerCase(h);
-    cout<<h;
-//    Hero player;
-//    player.levelUp();
+string a;
+    Hero player;
 //    Enemy *enemy = new Enemy(2, difficulty);
 //    enemy->showStats();
-//    tavern();
     vector<string> vector;
     getFile("C:\\Users\\Kuba\\CLionProjects\\JiPP2\\Projekt2\\missions", vector);
+    cout<<sizeof(vector);
+    tavern(player, vector, player.getLevel(), difficulty);
 }
