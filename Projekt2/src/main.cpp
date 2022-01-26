@@ -1,36 +1,30 @@
-#include <iostream>
 #include "../include/lib.h"
-#include "../include/Entity.h"
-#include "../include/Hero.h"
-#include "../include/Enemy.h"
 
-int main(int argc, char *argv[]){
-    string order = argv[1];
-    double difficulty;
+int main(int argc, char *argv[]) {
 
-    if(order == "help") {
+    if (argv[1] == NULL)
         help();
-        return 0;
-    }
 
-    else if(order == "easy")
-        difficulty = 1.5;
+    double difficulty = checkDifficulty(argv[1]);
 
-    else if(order == "medium")
-        difficulty = 2;
+    vector<string> sitems;
+    vector<string> missions;
 
-    else if(order == "hard")
-        difficulty = 3;
-    else {
-        help();
-        return 0;
-    }
-string a;
-    Hero player;
-//    Enemy *enemy = new Enemy(2, difficulty);
-//    enemy->showStats();
-    vector<string> vector;
-    getFile("C:\\Users\\Kuba\\CLionProjects\\JiPP2\\Projekt2\\missions", vector);
-    cout<<sizeof(vector);
-    tavern(player, vector, player.getLevel(), difficulty);
+    //Hero player;
+
+    getFile("C:\\Users\\Kuba\\CLionProjects\\JiPP2\\Projekt2\\missions", missions);
+    getFile("C:\\Users\\Kuba\\CLionProjects\\JiPP2\\Projekt2\\items", sitems);
+
+    Item items[10];
+    itemsArray(items,sitems);
+//    for(int i = 0; i <10; i++){
+//        cout<<
+//        items[i].getName()<<
+//        items[i].getCost()<<
+//        items[i].getDamage()<<
+//        items[i].getHP()<<
+//        items[i].getType()<<endl;
+//    }
+cout<<items[0].getName();
+    //tavern(player, missions, player.getLevel(), difficulty);
 }

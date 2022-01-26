@@ -1,7 +1,3 @@
-//
-// Created by Kuba on 10.01.2022.
-//
-
 #ifndef PROJEKT2_ENTITY_H
 #define PROJEKT2_ENTITY_H
 

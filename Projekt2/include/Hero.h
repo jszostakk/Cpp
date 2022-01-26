@@ -1,11 +1,16 @@
-#ifndef ZESTAW1_HERO_H
-#define ZESTAW1_HERO_H
+#ifndef PROJEKT2_HERO_H
+#define PROJEKT2_HERO_H
 
 #include "Entity.h"
+#include "Item.h"
 
 class Hero : public Entity {
 protected:
     int money;
+
+    Item *equipment;
+
+    Item *backpack;
 public:
     Hero();
 
@@ -18,6 +23,14 @@ public:
     void showStats();
 
     void levelUp();
+
+    void buyItem(Item item);
+
+    void sellItem(Item item);
+
+    void equipItem(Item item);
+
+    void unequipItem(Item item);
 };
 
 
