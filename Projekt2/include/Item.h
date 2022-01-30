@@ -36,6 +36,8 @@ public:
     string getType();
 
     void setType(string type);
+
+    Item(Item &item);
 };
 
 

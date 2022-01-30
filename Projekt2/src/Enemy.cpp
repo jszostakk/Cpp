@@ -5,7 +5,7 @@ using namespace std;
 
 Enemy::Enemy(int level, double difficulty) {
     srand(time(NULL));
-    ifstream input("C:\\Users\\Kuba\\CLionProjects\\JiPP2\\Projekt2\\names");
+    ifstream input("K:\\Projekt2\\names");
     this->level = level;
     hp = 10;
     damageMin = 1;
@@ -24,8 +24,8 @@ Enemy::Enemy(int level, double difficulty) {
         getline(input, name);
     }
     hp *= difficulty;
-    damageMin *= difficulty;
-    damageMax *= difficulty;
+    damageMin *= difficulty/2.0;
+    damageMax *= difficulty/2.0;
     cout << "A new enemy - " << name << " - has attacked!" << endl;
 }
 

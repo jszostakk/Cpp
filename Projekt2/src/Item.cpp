@@ -57,3 +57,11 @@ string Item::getType() {
 void Item::setType(string type) {
     this->type = type;
 }
+
+Item::Item(Item & item){
+    name = item.name;
+    cost = item.cost;
+    damage = item.damage;
+    hp = item.hp;
+    type = item.type;
+}

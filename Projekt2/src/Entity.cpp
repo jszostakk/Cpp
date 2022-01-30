@@ -1,4 +1,5 @@
 #include "../include/Entity.h"
+#include "../include/Exception.h"
 
 Entity::Entity() {}
 
@@ -39,5 +40,8 @@ void Entity::setName(string name) {
 }
 
 string Entity::getName() {
+    if (name.length() > 15) {
+        throw Exception("ERROR: Name too long!");
+    }
     return name;
 }

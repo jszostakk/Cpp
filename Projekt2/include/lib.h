@@ -1,13 +1,14 @@
 #include "Hero.h"
 #include "Enemy.h"
+#include "Exception.h"
 #include "time.h"
 #include <vector>
 #include <fstream>
 #include <string>
 #include <iostream>
-#include <unistd.h>
 #include <algorithm>
 #include <exception>
+#include <unistd.h>
 
 using namespace std;
 
@@ -15,13 +16,17 @@ double checkDifficulty(string order);
 
 void help();
 
-bool fight(Hero hero);
+void fight(Hero &hero);
 
-bool fight(Hero hero, Enemy *enemy);
+void fight(Hero &hero, Enemy *enemy);
 
-string tavern(Hero hero, vector<string> &vector, int level, double difficulty);
+void tavern(Hero &hero, vector<string> &vector, double difficulty, Item items[], Item equipment[], Item backpack[]);
 
-int mission(Hero hero, vector<string> &vector, int level, double difficulty);
+int mission(Hero &hero, vector<string> &vector, int level, double difficulty);
+
+void shop(Hero &hero, Item items[], Item equipment[], Item backpack[]);
+
+void heroF(Hero &hero, Item equipment[], Item backpack[]);
 
 void getFile(string file, vector<string> &vector);
 
@@ -51,3 +56,5 @@ bool whatsBigger(T a, T b) {
 int gambling(Hero hero);
 
 void itemsArray(Item items[], vector<string> &sitems);
+
+void toLower(string &string);

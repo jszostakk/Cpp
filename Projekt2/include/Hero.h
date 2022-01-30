@@ -14,6 +14,8 @@ protected:
 public:
     Hero();
 
+    Hero(Hero &hero);
+
     ~Hero();
 
     void setMoney(int money);
@@ -22,15 +24,17 @@ public:
 
     void showStats();
 
+    void showEq(Item equipment[], Item backpack[]);
+
     void levelUp();
 
-    void buyItem(Item item);
+    void buyItem(Item item, Item backpack[]);
 
-    void sellItem(Item item);
+    void sellItem(Item item, Item backpack[]);
 
-    void equipItem(Item item);
+    void equipItem(Item item, Item equipment[], Item backpack[]);
 
-    void unequipItem(Item item);
+    void unequipItem(Item item, Item equipment[], Item backpack[]);
 };
 
 

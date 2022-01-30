@@ -10,21 +10,31 @@ int main(int argc, char *argv[]) {
     vector<string> sitems;
     vector<string> missions;
 
-    //Hero player;
+    Item *equipment = new Item[2];
+    equipment[0] = {"none",0,0,0,"none"};
+    equipment[1] = {"none",0,0,0,"none"};
+    Item *backpack = new Item[4];
+    backpack[0] = {"none",0,0,0,"none"};
+    backpack[1] = {"none",0,0,0,"none"};
+    backpack[2] = {"none",0,0,0,"none"};
+    backpack[3] = {"none",0,0,0,"none"};
 
-    getFile("C:\\Users\\Kuba\\CLionProjects\\JiPP2\\Projekt2\\missions", missions);
-    getFile("C:\\Users\\Kuba\\CLionProjects\\JiPP2\\Projekt2\\items", sitems);
+    Hero player;
+
+    try{
+        player.getName();
+    } catch(Exception& e){
+        cout<<e.what()<<endl;
+        exit(-1);
+    }
+
+    getFile("K:\\Projekt2\\missions", missions);
+    getFile("K:\\Projekt2\\items", sitems);
 
     Item items[10];
-    itemsArray(items,sitems);
-//    for(int i = 0; i <10; i++){
-//        cout<<
-//        items[i].getName()<<
-//        items[i].getCost()<<
-//        items[i].getDamage()<<
-//        items[i].getHP()<<
-//        items[i].getType()<<endl;
-//    }
-cout<<items[0].getName();
-    //tavern(player, missions, player.getLevel(), difficulty);
+    itemsArray(items, sitems);
+
+    tavern(player, missions, difficulty, items, equipment, backpack);
+
+    return 0;
 }
