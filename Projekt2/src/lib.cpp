@@ -120,11 +120,11 @@ void tavern(Hero &hero, vector<string> &missions, double difficulty, Item items[
         else
             cout << "There is no such command!" << endl;
     }
-    cout << "########################################################################################\n"
-            "####################################### YOU WON! #######################################\n"
-            "########################################################################################\n"
-            "############################# You have reached 10th level! #############################\n"
-            "########################################################################################" << endl;
+    cout << "   ########################################################################################\n"
+            "   ####################################### YOU WON! #######################################\n"
+            "   ########################################################################################\n"
+            "   ############################# You have reached 10th level! #############################\n"
+            "   ########################################################################################" << endl;
 }
 
 void shop(Hero &hero, Item items[], Item equipment[], Item backpack[]) {
@@ -138,7 +138,10 @@ void shop(Hero &hero, Item items[], Item equipment[], Item backpack[]) {
             else if (items[i].getType() == "armor")
                 cout << "HP: " << items[i].getHP() << endl;
         }
-        cout << "\nChoose action:\n-buy\n-exit\n\nYour choice: ";
+        cout << "\n                               Choose action:\n"
+                "                               -buy\n"
+                "                               -exit\n\n"
+                "                               Your choice: ";
 
         string choice;
         cin >> choice;
@@ -174,12 +177,12 @@ void shop(Hero &hero, Item items[], Item equipment[], Item backpack[]) {
 
 void heroF(Hero &hero, Item equipment[], Item backpack[]) {
     while (1) {
-        cout << "\nChoose action:\n"
-                "-stats\n"
-                "-equip\n"
-                "-unequip\n"
-                "-sell\n"
-                "-exit" << endl;
+        cout << "                               \nChoose action:\n"
+                "                               -stats\n"
+                "                               -equip\n"
+                "                               -unequip\n"
+                "                               -sell\n"
+                "                               -exit" << endl;
 
         string choice;
         cin >> choice;

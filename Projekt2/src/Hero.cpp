@@ -10,16 +10,6 @@ Hero::Hero() {
     damageMin = 3;
     damageMax = 7;
     money = 0;
-
-//    equipment = new Item[2];
-//    equipment[0] = {"none",0,0,0,"none"};
-//    equipment[1] = {"none",0,0,0,"none"};
-//
-//    backpack = new Item[4];
-//    backpack[0] = {"none",0,0,0,"none"};
-//    backpack[1] = {"none",0,0,0,"none"};
-//    backpack[2] = {"none",0,0,0,"none"};
-//    backpack[3] = {"none",0,0,0,"none"};
 }
 
 Hero::Hero(Hero &hero) {
@@ -92,7 +82,10 @@ void Hero::levelUp() {
     string choice;
     cout << "===========================================LEVEL UP===========================================" << endl;
     while (loop) {
-        cout << "Choose which stat you want to upgrade: \n-HP \n-Damage \n Your choice: ";
+        cout << "                               Choose which stat you want to upgrade: \n"
+                "                               -HP \n"
+                "                               -Damage \n "
+                "                               Your choice: ";
         cin >> choice;
         toLower(choice);
 
