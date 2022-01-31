@@ -22,8 +22,7 @@ Hero::Hero(Hero &hero) {
 }
 
 Hero::~Hero() {
-//    delete[] equipment;
-//    delete[] backpack;
+    cout << "Hero destroyed!" << endl;
 }
 
 void Hero::showStats() {

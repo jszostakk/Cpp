@@ -15,6 +15,8 @@ protected:
 public:
     Item();
 
+    ~Item();
+
     Item(string name, int cost, int damage, int hp, string type);
 
     int getCost();

@@ -132,7 +132,7 @@ void shop(Hero &hero, Item items[], Item equipment[], Item backpack[]) {
         cout << "===================================== SHOP =====================================" << endl;
         for (int i = 0; i < 10; i++) {
             cout << i << ". Name: " << items[i].getName() <<
-                 "\nCost: " << items[i].getCost() << endl;
+                 "\nCost: " << items[i].getCost() << "&" << endl;
             if (items[i].getType() == "weapon")
                 cout << "Damage: " << items[i].getDamage() << endl;
             else if (items[i].getType() == "armor")

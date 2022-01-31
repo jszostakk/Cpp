@@ -1,5 +1,5 @@
-#ifndef ZESTAW1_ENEMY_H
-#define ZESTAW1_ENEMY_H
+#ifndef PROJEKT2_ENEMY_H
+#define PROJEKT2_ENEMY_H
 
 #include "Entity.h"
 #include "time.h"

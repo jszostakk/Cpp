@@ -10,6 +10,10 @@ Item::Item() {
     type = "none";
 }
 
+Item::~Item() {
+    cout<<"Item destroyed!"<<endl;
+}
+
 Item::Item(string name, int cost, int damage, int hp, string type) {
     this->name = name;
     this->cost = cost;
