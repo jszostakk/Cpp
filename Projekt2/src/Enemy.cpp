@@ -5,7 +5,7 @@ using namespace std;
 
 Enemy::Enemy(int level, double difficulty) {
     srand(time(NULL));
-    ifstream input("K:\\Projekt2\\names");
+    ifstream input("names");
     this->level = level;
     hp = 10;
     damageMin = 1;

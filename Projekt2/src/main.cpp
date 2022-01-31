@@ -28,9 +28,7 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
 
-    //getFile("K:\\Projekt2\\missions", missions);
     getFile("missions", missions);
-    //getFile("K:\\Projekt2\\items", sitems);
     getFile("items", sitems);
 
     Item items[10];

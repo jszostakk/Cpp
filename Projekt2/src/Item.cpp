@@ -11,7 +11,6 @@ Item::Item() {
 }
 
 Item::~Item() {
-    cout<<"Item destroyed!"<<endl;
 }
 
 Item::Item(string name, int cost, int damage, int hp, string type) {

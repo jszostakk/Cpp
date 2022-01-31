@@ -99,7 +99,6 @@ void Hero::levelUp() {
             cout << "\nERROR: Wrong input!\n" << endl;
         }
     }
-    cout << "==============================================================================================" << endl;
 }
 
 int Hero::getMoney() {
