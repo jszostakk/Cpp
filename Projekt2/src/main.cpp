@@ -36,5 +36,7 @@ int main(int argc, char *argv[]) {
 
     tavern(player, missions, difficulty, items, equipment, backpack);
 
+    delete [] equipment;
+    delete [] backpack;
     return 0;
 }
