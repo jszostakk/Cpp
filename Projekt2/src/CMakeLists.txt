@@ -9,5 +9,4 @@ add_executable(Projekt2 main.cpp
         Hero.cpp
         lib.cpp
         Item.cpp
-        Exception.cpp
-        Mission.cpp)
+        Exception.cpp)
