@@ -1,3 +1,0 @@
-C:/Users/Kuba/CLionProjects/JiPP2/Lab2/zestaw3/cmake-build-debug/CMakeFiles/zestaw3.dir
-C:/Users/Kuba/CLionProjects/JiPP2/Lab2/zestaw3/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Kuba/CLionProjects/JiPP2/Lab2/zestaw3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
